@@ -198,3 +198,25 @@ p {
   padding: 0;
   border: none;
 }
+
+.trending-card {
+  max-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.profile-container {
+  display: grid;
+  grid-template: auto auto / 62px auto;
+  gap: 4px;
+}
+
+.trending-picture {
+  grid-row: span 2;
+}
+
+.trending-username {
+  font-weight: bold;
+}
