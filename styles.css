@@ -5,6 +5,14 @@ body {
   grid-template: 140px 1fr / 260px 1fr;
 }
 
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
 /* ASIDE SECTION */
 
 .aside {
@@ -28,8 +36,6 @@ body {
 
 .logo-text {
   font-size: 1.8rem;
-  padding: 0;
-  margin: 0;
 }
 
 .items-container {
@@ -51,6 +57,10 @@ body {
 }
 
 /* HEADER SECTION */
+
+.icon-button {
+  height: 28px;
+}
 
 .header {
   background-color: #fff;
@@ -128,12 +138,43 @@ body {
   gap: 20px;
 }
 
-.projects-section,
-.announcements-section,
-.trending-section {
-  background-color: coral;
+.main > * {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.main-card {
+  background-color: #fff;
+  padding: 28px 18px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.2);
+}
+
+.section-title {
+  margin-bottom: 8px;
 }
 
 .projects-section {
   grid-area: 1 / 1 / 3 / 2;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 20px;
+  align-content: start;
+}
+
+.project-card {
+  min-height: 200px;
+  border-left: 10px solid #ff74a1;
+
+  display: grid;
+  grid-template-rows: 28px 1fr auto;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
 }
