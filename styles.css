@@ -129,6 +129,10 @@ p {
 
 /* MAIN SECTION */
 
+.text-body {
+  color: #a4a4a4;
+}
+
 .main {
   background-color: #a8eeeb;
   padding: 20px;
@@ -177,4 +181,20 @@ p {
   display: flex;
   justify-content: end;
   gap: 20px;
+}
+
+.announcements-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.announcement {
+  padding-bottom: 18px;
+  border-bottom: 1px solid #a4a4a4;
+}
+
+.announcement:last-child {
+  padding: 0;
+  border: none;
 }
