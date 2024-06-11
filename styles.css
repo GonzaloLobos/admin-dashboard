@@ -1,4 +1,5 @@
 body {
+  font-family: "Roboto", sans-serif;
   height: 100vh;
   margin: 0;
   display: grid;
@@ -118,6 +119,7 @@ p {
 .nav-btn {
   background-color: #42cac0;
   color: #fff;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin: 0 4px;
   padding: 8px 24px;
